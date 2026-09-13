@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo de productos Apple: MacBook, iPhone, iPad, Apple Watch y más.">
-    <title>Apple Store | Catálogo de Productos</title>
+    <meta name="description" content="Electrohogar: tienda online de pequeños electrodomésticos para el cuidado personal, la cocina y el hogar.">
+    <title>Electrohogar | Pequeños Electrodomésticos</title>
 </head>
 <body>
 
     <header>
-        <h1>Apple Store</h1>
+        <h1>Electrohogar</h1>
         <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#nosotros">Sobre nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -22,77 +23,98 @@
 
     <main id="inicio">
 
-        <aside aria-label="Filtros de categorías">
-            <h2>Categorías</h2>
-            <nav aria-label="Filtros de productos">
+        <section id="productos" aria-label="Productos">
+            <h2>Productos</h2>
+            <p>Encontrá los mejores pequeños electrodomésticos para tu día a día.</p>
+
+            <section id="cuidado-personal" aria-label="Categoría cuidado personal">
+                <h3>Cuidado personal</h3>
                 <ul>
-                    <li><a href="#catalogo">Todos los productos</a></li>
-                    <li><a href="#macbook">MacBook</a></li>
-                    <li><a href="#iphone">iPhone</a></li>
-                    <li><a href="#ipad">iPad</a></li>
-                    <li><a href="#watch">Apple Watch</a></li>
-                    <li><a href="#airpods">AirPods</a></li>
-                    <li><a href="#accesorios">Accesorios</a></li>
+                    <li>Secador de pelo</li>
+                    <li>Plancha para el cabello</li>
+                    <li>Afeitadora eléctrica</li>
+                    <li>Cepillo de dientes eléctrico</li>
+                    <li>Cortadora de cabello</li>
+                    <li>Depiladora</li>
                 </ul>
-            </nav>
-        </aside>
+            </section>
 
-        <section id="catalogo" aria-label="Catálogo de productos">
-            <h2>Catálogo de productos</h2>
+            <section id="cocina" aria-label="Categoría cocina">
+                <h3>Cocina</h3>
+                <ul>
+                    <li>Licuadora</li>
+                    <li>Pava eléctrica</li>
+                    <li>Tostadora</li>
+                    <li>Cafetera</li>
+                    <li>Batidora</li>
+                    <li>Sandwichera</li>
+                </ul>
+            </section>
 
-            <article id="macbook">
-                <h3><a href="producto.html">MacBook Air M3</a></h3>
-                <p>Notebook ultradelgado con chip M4, 13 pulgadas.</p>
-                <p>Precio: $1.199.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de MacBook Air M3">Ver detalle &rarr;</a></p>
+            <section id="hogar" aria-label="Categoría hogar">
+                <h3>Hogar</h3>
+                <ul>
+                    <li>Aspiradora</li>
+                    <li>Plancha de ropa</li>
+                    <li>Ventilador</li>
+                    <li>Calefactor</li>
+                    <li>Purificador de aire</li>
+                    <li>Hidrolavadora</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="destacados" aria-label="Productos destacados">
+            <h2>Productos destacados</h2>
+
+            <article>
+                <h3>Licuadora Lume Omega</h3>
+                <p>Licuadora de 700W con vaso de vidrio de 2 litros y cuchilla de acero inoxidable.</p>
+                <p>Precio: $95.000</p>
             </article>
 
-            <article id="iphone">
-                <h3><a href="producto.html">iPhone 15 Pro</a></h3>
-                <p>Smartphone con chip A17 Pro, cámara de 48MP y titanio.</p>
-                <p>Precio: $1.599.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de iPhone 15 Pro">Ver detalle &rarr;</a></p>
+            <article>
+                <h3>Aspiradora Ciclónica Bora</h3>
+                <p>Aspiradora sin bolsa con filtro HEPA y mayor potencia de succión.</p>
+                <p>Precio: $145.000</p>
             </article>
 
-            <article id="ipad">
-                <h3><a href="producto.html">iPad Air</a></h3>
-                <p>Tablet con chip M2, pantalla Liquid Retina de 11 pulgadas.</p>
-                <p>Precio: $999.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de iPad Air">Ver detalle &rarr;</a></p>
+            <article>
+                <h3>Secador de pelo Gloss Air</h3>
+                <p>Secador iónico de 2200W con difusor y dos velocidades.</p>
+                <p>Precio: $58.000</p>
             </article>
 
-            <article id="watch">
-                <h3><a href="producto.html">Apple Watch Series 9</a></h3>
-                <p>Reloj inteligente con GPS y detección de accidentes.</p>
-                <p>Precio: $549.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de Apple Watch Series 9">Ver detalle &rarr;</a></p>
+            <article>
+                <h3>Cafetera Expresso DeliCaf</h3>
+                <p>Cafetera de 15 bares con vaporizador de leche para espumar.</p>
+                <p>Precio: $210.000</p>
             </article>
+        </section>
 
-            <article id="airpods">
-                <h3><a href="producto.html">AirPods Pro 2</a></h3>
-                <p>Auriculares inalámbricos con cancelación activa de ruido.</p>
-                <p>Precio: $349.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de AirPods Pro 2">Ver detalle &rarr;</a></p>
-            </article>
+        <section id="nosotros" aria-label="Sobre nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>Electrohogar es una tienda online dedicada a la venta de pequeños electrodomésticos. Nuestra misión es acercar tecnología y comodidad a cada hogar, ofreciendo productos de calidad para el cuidado personal, la cocina y el hogar.</p>
+        </section>
 
-            <article id="accesorios">
-                <h3><a href="producto.html">Magic Mouse</a></h3>
-                <p>Mouse inalámbrico recargable con Multi-Touch.</p>
-                <p>Precio: $129.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de Magic Mouse">Ver detalle &rarr;</a></p>
-            </article>
-
+        <section id="contacto" aria-label="Contacto">
+            <h2>Contacto</h2>
+            <address>
+                <p>Correo electrónico: <a href="mailto:info@electrohogar.com.ar">info@electrohogar.com.ar</a></p>
+                <p>Teléfono: <a href="tel:+5491112345678">+54 9 11 1234-5678</a></p>
+                <p>Dirección: Av. Tecnológica 1234, Buenos Aires, Argentina</p>
+            </address>
         </section>
 
     </main>
 
-    <footer id="contacto">
-        <p>&copy; 2026 Apple Store. Todos los derechos reservados.</p>
+    <footer>
+        <p>&copy; 2026 Electrohogar. Todos los derechos reservados.</p>
         <nav aria-label="Redes sociales">
             <ul>
-                <li><a href="https://instagram.com/apple" rel="noopener noreferrer" target="_blank">Instagram</a></li>
-                <li><a href="https://x.com/apple" rel="noopener noreferrer" target="_blank">X (Twitter)</a></li>
-                <li><a href="https://youtube.com/apple" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+                <li><a href="https://instagram.com/electrohogar" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+                <li><a href="https://x.com/electrohogar" rel="noopener noreferrer" target="_blank">X (Twitter)</a></li>
+                <li><a href="https://youtube.com/electrohogar" rel="noopener noreferrer" target="_blank">YouTube</a></li>
             </ul>
         </nav>
     </footer>
