@@ -1,5 +1,1 @@
-1. Quiero hacer la estructura base de mi index.html con un encabezado, filtro de categorias, catalogo cetral y footer.
-
-2. Quiero crear la pagina de detalle del producto donde se puedan ver especificaciones del mismo
-
-3. Quiero crear pantalla de carrito y contacto del ecommerce
+1.voy a crear un proyecto de e-commerce llamado Electrohogar para la materia aplicaciones web cliente.El proyecto esta orientado a la venta de pequeños electrodomésticos. La idea es construir solamente el esqueleto principal de html de la pagina principal utilizando etiquetas semanticas. La pagina principal tendra un encabezado con el nombre de la empresa y un menu de navegacion. tendra una seccion de productos con categorias como cuidado personal, cocina, hogar, una seccion de filtros, una seccion de productos destacados, una seccion de contacto, una seccion de "sobre nosotros" y un footer.
