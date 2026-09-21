@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tu carrito de compras con los productos seleccionados para finalizar la compra.">
-    <title>Carrito de Compras | Apple Store</title>
+    <meta name="description" content="Tu carrito de compras en Electrohogar con los productos seleccionados para finalizar la compra.">
+    <title>Carrito de Compras | Electrohogar</title>
 </head>
 <body>
 
     <header>
-        <h1>Apple Store</h1>
+        <h1>Electrohogar</h1>
         <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#catalogo">Catálogo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#destacados">Destacados</a></li>
+                <li><a href="index.html#nosotros">Sobre nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +25,7 @@
         <nav aria-label="Ruta de navegación">
             <ol>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#catalogo">Catálogo</a></li>
+                <li><a href="index.html#productos">Catálogo</a></li>
                 <li aria-current="page">Carrito de compras</li>
             </ol>
         </nav>
@@ -40,44 +42,34 @@
                         <th scope="col">Precio</th>
                         <th scope="col">Cantidad</th>
                         <th scope="col">Subtotal</th>
+                        <th scope="col">Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">MacBook Air M3</th>
-                        <td>$1.199.000</td>
+                        <th scope="row"><a href="producto.html">Pava eléctrica ATMA PED 2511 IAP</a></th>
+                        <td>$120.000</td>
                         <td>1</td>
-                        <td>$1.199.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">iPhone 15 Pro</th>
-                        <td>$1.599.000</td>
-                        <td>1</td>
-                        <td>$1.599.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">AirPods Pro 2</th>
-                        <td>$349.000</td>
-                        <td>2</td>
-                        <td>$698.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Apple Watch Series 9</th>
-                        <td>$549.000</td>
-                        <td>1</td>
-                        <td>$549.000</td>
+                        <td>$120.000</td>
+                        <td><a href="#">Eliminar</a></td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th scope="row" colspan="3">Total</th>
-                        <td>$4.045.000</td>
+                        <th scope="row" colspan="4">Total del carrito</th>
+                        <td>$120.000</td>
                     </tr>
                 </tfoot>
             </table>
         </section>
 
-        <section aria-label="Formulario de datos para la compra">
+        <section aria-label="Opciones del carrito">
+            <h3>Opciones</h3>
+            <p><a href="index.html#productos">&larr; Continuar comprando</a></p>
+            <p><a href="#finalizar" role="button">Finalizar compra</a></p>
+        </section>
+
+        <section id="finalizar" aria-label="Formulario de datos para la compra">
             <h3>Datos para finalizar la compra</h3>
             <form action="#" method="post">
                 <fieldset>
@@ -120,19 +112,19 @@
                     </p>
                 </fieldset>
 
-                <p><input type="submit" value="Finalizar compra"></p>
-                <p><a href="index.html#catalogo">&larr; Seguir comprando</a></p>
+                <p><a href="confirmacion.html" role="button">Finalizar compra</a></p>
+                <p><a href="index.html#productos">&larr; Seguir comprando</a></p>
             </form>
         </section>
     </main>
 
-    <footer id="contacto">
-        <p>&copy; 2026 Apple Store. Todos los derechos reservados.</p>
+    <footer>
+        <p>&copy; 2026 Electrohogar. Todos los derechos reservados.</p>
         <nav aria-label="Redes sociales">
             <ul>
-                <li><a href="https://instagram.com/apple" rel="noopener noreferrer" target="_blank">Instagram</a></li>
-                <li><a href="https://x.com/apple" rel="noopener noreferrer" target="_blank">X (Twitter)</a></li>
-                <li><a href="https://youtube.com/apple" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+                <li><a href="https://instagram.com/electrohogar" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+                <li><a href="https://x.com/electrohogar" rel="noopener noreferrer" target="_blank">X (Twitter)</a></li>
+                <li><a href="https://youtube.com/electrohogar" rel="noopener noreferrer" target="_blank">YouTube</a></li>
             </ul>
         </nav>
     </footer>

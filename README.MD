@@ -77,4 +77,4 @@ Copiá el link de tu repositorio (`https://github.com/TU-USUARIO/nombre-repo`) y
 - **Buscar el botón "Fork" en vez de "Use this template"**: son cosas distintas. Fork crea una copia conectada al original; template crea una copia independiente. Usá siempre "Use this template".
 - **Trabajar directo sobre `main`**: creá una rama antes de tocar archivos, para practicar el flujo de PR.
 - **Dejar el repositorio como privado**: si el repo no es público, el profesor puede no tener acceso para revisarlo. Verificá los ajustes en Settings → General → Danger Zone si necesitás cambiar la visibilidad.
-- **No hacer push de la rama antes de abrir el PR**: si `git push origin practica1` falla, revisá que la rama exista localmente (`git branch`) y que el remoto esté bien configurado (`git remote -v`).
+- **No hacer push de la rama antes de abrir el PR**: si `git push origin practica1` falla, revisá que la rama exista localmente (`git branch`) y que el remoto esté bien configurado (`git remote -v`)
