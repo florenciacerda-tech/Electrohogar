@@ -8,3 +8,7 @@
 5. voy a crear una pagina de confirmacion de compra. la pagina se mostrara despues de finalezar la compra y tendra un mensaje de coompra realizada correctamente, un resumen del pedido, el total y una opcion para volver al inicio.
 
 6. Voy a crear una página de administración , donde se puedan visualizar los productos y tener opciones para agregar, editar y eliminar productos.
+
+7. Voy a crear una página de registro para Electrogar, donde los usuarios puedan crear una cuenta ingresando sus datos personales.
+
+8. Voy a crear una página de inicio de sesión para Electrogar, donde los usuarios puedan ingresar con su correo electrónico y contraseña.
