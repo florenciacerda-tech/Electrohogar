@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Plancha de ropa">
+    <rect width="640" height="480" fill="#f4f0e9"/>
+    <rect x="170" y="70" width="300" height="240" rx="12" fill="#ffffff" stroke="#dedad3" stroke-width="2"/>
+    <circle cx="248" cy="138" r="22" fill="#dedad3"/>
+    <path d="M206 278 L286 190 L336 246 L376 202 L434 278 Z" fill="#dedad3"/>
+    <text x="320" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#5c6169">Plancha de ropa</text>
+</svg>

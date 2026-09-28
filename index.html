@@ -3,96 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo de productos Apple: MacBook, iPhone, iPad, Apple Watch y más.">
-    <title>Apple Store | Catálogo de Productos</title>
+    <meta name="description" content="Electrohogar: tienda online de pequeños electrodomésticos para el cuidado personal, la cocina y el hogar.">
+    <title>Electrohogar | Pequeños Electrodomésticos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Apple Store</h1>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="contenedor header-superior">
+            <div class="header-marca">
+                <button class="menu-hamburguesa" type="button" aria-label="Abrir menú de navegación">☰</button>
+                <h1>Electrohogar</h1>
+            </div>
 
-    <main id="inicio">
+            <form class="buscador" action="index.html" method="get" role="search" aria-label="Buscar productos">
+                <input type="search" name="q" placeholder="Buscar productos (ej. pava, tostadora...)" aria-label="Buscar productos">
+                <button class="boton-lupa" type="submit" aria-label="Buscar">
+                    <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <circle cx="10.5" cy="10.5" r="6.5"></circle>
+                        <path d="M15.3 15.3 21 21"></path>
+                    </svg>
+                </button>
+            </form>
 
-        <aside aria-label="Filtros de categorías">
-            <h2>Categorías</h2>
-            <nav aria-label="Filtros de productos">
+            <div class="header-usuario">
+                <a class="usuario-enlace" href="login.html" aria-label="Iniciar sesión">
+                    <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <circle cx="12" cy="7.5" r="3.75"></circle>
+                        <path d="M4.5 20.5c0-3.9 3.4-6 7.5-6s7.5 2.1 7.5 6"></path>
+                    </svg>
+                    <span class="usuario-texto">Iniciar Sesión</span>
+                </a>
+                <a class="carrito" href="carrito.html" aria-label="Ver carrito">
+                    <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M2 3h2.6l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h9a1.6 1.6 0 0 0 1.6-1.3L21 7H5.5"></path>
+                        <circle cx="9.5" cy="20" r="1.3"></circle>
+                        <circle cx="18" cy="20" r="1.3"></circle>
+                    </svg>
+                    <span class="carrito-texto">Carrito</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="contenedor header-inferior">
+            <nav aria-label="Navegación principal">
                 <ul>
-                    <li><a href="#catalogo">Todos los productos</a></li>
-                    <li><a href="#macbook">MacBook</a></li>
-                    <li><a href="#iphone">iPhone</a></li>
-                    <li><a href="#ipad">iPad</a></li>
-                    <li><a href="#watch">Apple Watch</a></li>
-                    <li><a href="#airpods">AirPods</a></li>
-                    <li><a href="#accesorios">Accesorios</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#destacados">Destacados</a></li>
+                    <li><a href="#nosotros">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </aside>
+        </div>
+    </header>
 
-        <section id="catalogo" aria-label="Catálogo de productos">
-            <h2>Catálogo de productos</h2>
+    <section id="inicio"el-promocional" aria-label="Promoción de la semana">
+        <button class="carrusel-flecha carrusel-flecha-anterior" type="button" aria-label="Promoción anterior">❮</button>
 
-            <article id="macbook">
-                <h3><a href="producto.html">MacBook Air M3</a></h3>
-                <p>Notebook ultradelgado con chip M4, 13 pulgadas.</p>
-                <p>Precio: $1.199.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de MacBook Air M3">Ver detalle &rarr;</a></p>
-            </article>
+        <div class="contenedor carrusel-contenedor">
+            <p class="carrusel-kicker">Promoción de la semana</p>
+            <h2 class="carrusel-titulo">MODERNIZÁ TU COCINA</h2>
+            <p class="carrusel-subtitulo">Renová tu espacio hoy mismo</p>
 
-            <article id="iphone">
-                <h3><a href="producto.html">iPhone 15 Pro</a></h3>
-                <p>Smartphone con chip A17 Pro, cámara de 48MP y titanio.</p>
-                <p>Precio: $1.599.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de iPhone 15 Pro">Ver detalle &rarr;</a></p>
-            </article>
+            <ul class="carrusel-promos">
+                <li>3 y 6 cuotas sin interés</li>
+                <li>Envío gratis a todo el país</li>
+            </ul>
+        </div>
 
-            <article id="ipad">
-                <h3><a href="producto.html">iPad Air</a></h3>
-                <p>Tablet con chip M2, pantalla Liquid Retina de 11 pulgadas.</p>
-                <p>Precio: $999.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de iPad Air">Ver detalle &rarr;</a></p>
-            </article>
+        <button class="carrusel-flecha carrusel-flecha-siguiente" type="button" aria-label="Promoción siguiente">❯</button>
+    </section>
 
-            <article id="watch">
-                <h3><a href="producto.html">Apple Watch Series 9</a></h3>
-                <p>Reloj inteligente con GPS y detección de accidentes.</p>
-                <p>Precio: $549.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de Apple Watch Series 9">Ver detalle &rarr;</a></p>
-            </article>
+    <main id="inicio" class="contenedor">
 
-            <article id="airpods">
-                <h3><a href="producto.html">AirPods Pro 2</a></h3>
-                <p>Auriculares inalámbricos con cancelación activa de ruido.</p>
-                <p>Precio: $349.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de AirPods Pro 2">Ver detalle &rarr;</a></p>
-            </article>
+        <div class="tienda-contenedor">
 
-            <article id="accesorios">
-                <h3><a href="producto.html">Magic Mouse</a></h3>
-                <p>Mouse inalámbrico recargable con Multi-Touch.</p>
-                <p>Precio: $129.000</p>
-                <p><a href="producto.html" aria-label="Ver detalle de Magic Mouse">Ver detalle &rarr;</a></p>
-            </article>
+            <aside class="filtros-lateral" aria-label="Filtros de productos">
+                <form class="filtros-caja" action="index.html" method="get">
+                    <h3>Filtros</h3>
 
+                    <fieldset class="filtro-bloque">
+                        <legend>Precio</legend>
+                        <div class="campo">
+                            <label for="precio-min">Mínimo</label>
+                            <input type="number" id="precio-min" name="precio-min" placeholder="0" min="0" step="1000">
+                        </div>
+                        <div class="campo">
+                            <label for="precio-max">Máximo</label>
+                            <input type="number" id="precio-max" name="precio-max" placeholder="500000" min="0" step="1000">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="filtro-bloque">
+                        <legend>Categorías</legend>
+                        <ul class="filtro-lista">
+                            <li>
+                                <input type="checkbox" id="cat-cocina" name="categoria" value="cocina">
+                                <label for="cat-cocina">Cocina</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cat-hogar" name="categoria" value="hogar">
+                                <label for="cat-hogar">Hogar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cat-cuidado" name="categoria" value="cuidado-personal">
+                                <label for="cat-cuidado">Cuidado Personal</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <button class="filtros-aplicar" type="submit">Aplicar Filtros</button>
+                </form>
+            </aside>
+
+            <section id="productos" aria-label="Productos">
+                <h2>Productos</h2>
+                <p>Encontrá los mejores pequeños electrodomésticos para tu día a día.</p>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/licuadora.jpg" alt="Licuadora Lume Omega con vaso de vidrio de 2 litros">
+                    </div>
+                    <h3>Licuadora Lume Omega</h3>
+                    <p class="producto-descripcion">700W, vaso de vidrio de 2 litros y cuchilla de acero inoxidable.</p>
+                    <p class="producto-precio">$95.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/cafetera.jpg" alt="Cafetera Expresso DeliCaf de 15 bares con vaporizador de leche">
+                    </div>
+                    <h3>Cafetera Expresso DeliCaf</h3>
+                    <p class="producto-descripcion">15 bares con vaporizador de leche para espumar.</p>
+                    <p class="producto-precio">$210.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/pava.jpg"alt="Pava eléctrica de acero inoxidable">
+                    </div>
+                    <h3>Pava eléctrica ATMA</h3>
+                    <p class="producto-descripcion">Capacidad de 1,7 litros con base giratoria y corte automático.</p>
+                    <p class="producto-precio">$120.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/tostadora.jpg" alt="Tostadora de dos ranuras">
+                    </div>
+                    <h3>Tostadora Doble Slice</h3>
+                    <p class="producto-descripcion">Dos ranuras anchas con 7 niveles de tostado.</p>
+                    <p class="producto-precio">$72.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/aspiradora.jpg" alt="Aspiradora Ciclónica Bora sin bolsa con filtro HEPA">
+                    </div>
+                    <h3>Aspiradora Ciclónica Bora</h3>
+                    <p class="producto-descripcion">Sin bolsa, con filtro HEPA y mayor potencia de succión.</p>
+                    <p class="producto-precio">$145.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/plancha.jpg" alt="Plancha de ropa con vapor">
+                    </div>
+                    <h3>Plancha de ropa Vapor 2000</h3>
+                    <p class="producto-descripcion">2000W con vapor continuo y suela de cerámica.</p>
+                    <p class="producto-precio">$98.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/purificador.jpg" alt="Purificador de aire con filtro HEPA">
+                    </div>
+                    <h3>Purificador de aire Aero</h3>
+                    <p class="producto-descripcion">Filtro HEPA y modo silencioso para dormitorios.</p>
+                    <p class="producto-precio">$175.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/secador.jpg" alt="Secador de pelo iónico Gloss Air de 2200W">
+                    </div>
+                    <h3>Secador de pelo Gloss Air</h3>
+                    <p class="producto-descripcion">2200W iónico con difusor y dos velocidades.</p>
+                    <p class="producto-precio">$58.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="imagen-producto">
+                        <img src="imagenes/afeitadora.jpg" alt="Afeitadora eléctrica">
+                    </div>
+                    <h3>Afeitadora eléctrica Lumen</h3>
+                    <p class="producto-descripcion">Cuchillas de acero, uso en seco y en húmedo.</p>
+                    <p class="producto-precio">$64.000</p>
+                    <div class="producto-acciones">
+                        <a class="boton-detalle" href="producto.html">Ver detalle</a>
+                        <button class="boton-agregar" type="button">Agregar al carrito</button>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+<section id="destacados" aria-label="Productos destacados">
+    <h2>Productos destacados</h2>
+    <p>Conocé algunos de nuestros productos destacados.</p>
+
+    <div class="productos-destacados">
+        <article class="producto">
+            <div class="imagen-producto">
+                <img src="imagenes/pava.jpg"
+                alt="pava-electrica ATMA">
+            </div>
+            <h3>Pava eléctrica ATMA</h3>
+            <p>Capacidad de 1,7 litros con base giratoria y corte automático.</p>
+            <p class="producto-precio">$120.000</p>
+            <a class="boton-detalle" href="producto.html">Ver detalle</a>
+        </article>
+
+        <article class="producto">
+            <div class="imagen-producto">
+                <img src="imagenes/cafetera.jpg"
+                alt="cafetera Expresso DeliCaf">
+            </div>
+            <h3>Cafetera Expresso DeliCaf</h3>
+            <p>15 bares con vaporizador de leche para espumar.</p>
+            <p class="producto-precio">$210.000</p>
+            <a class="boton-detalle" href="producto.html">Ver detalle</a>
+        </article>
+
+        <article class="producto">
+            <div class="imagen-producto">
+                <img src="imagenes/licuadora.jpg"
+                alt="licuadora Lume Omega">
+            </div>
+            <h3>Licuadora Lume Omega</h3>
+            <p>700W, vaso de vidrio de 2 litros y cuchilla de acero inoxidable.</p>
+            <p class="producto-precio">$95.000</p>
+            <a class="boton-detalle" href="producto.html">Ver detalle</a>
+        </article>
+    </div>
+</section>
+        <section id="nosotros" aria-label="Sobre nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>Electrohogar es una tienda online dedicada a la venta de pequeños electrodomésticos. Nuestra misión es acercar tecnología y comodidad a cada hogar, ofreciendo productos de calidad para el cuidado personal, la cocina y el hogar.</p>
+        </section>
+
+        <section id="contacto" aria-label="Contacto">
+            <h2>Contacto</h2>
+            <address>
+                <p>Correo electrónico: <a href="mailto:info@electrohogar.com.ar">info@electrohogar.com.ar</a></p>
+                <p>Teléfono: <a href="tel:+5491112345678">+54 9 11 1234-5678</a></p>
+                <p>Dirección: Av. Tecnológica 1234, Buenos Aires, Argentina</p>
+            </address>
         </section>
 
     </main>
 
-    <footer id="contacto">
-        <p>&copy; 2026 Apple Store. Todos los derechos reservados.</p>
+    <footer>
+        <p>&copy; 2026 Electrohogar. Todos los derechos reservados.</p>
         <nav aria-label="Redes sociales">
             <ul>
-                <li><a href="https://instagram.com/apple" rel="noopener noreferrer" target="_blank">Instagram</a></li>
-                <li><a href="https://x.com/apple" rel="noopener noreferrer" target="_blank">X (Twitter)</a></li>
-                <li><a href="https://youtube.com/apple" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+                <li><a href="https://instagram.com/electrohogar" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+                <li><a href="https://x.com/electrohogar" rel="noopener noreferrer" target="_blank">X (Twitter)</a></li>
+                <li><a href="https://youtube.com/electrohogar" rel="noopener noreferrer" target="_blank">YouTube</a></li>
             </ul>
         </nav>
     </footer>

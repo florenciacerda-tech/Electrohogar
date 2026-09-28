@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmación de compra en Electrohogar con el resumen de tu pedido.">
+    <title>Confirmación de compra | Electrohogar</title>
+</head>
+<body>
+
+    <header>
+        <h1>Electrohogar</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#destacados">Destacados</a></li>
+                <li><a href="index.html#nosotros">Sobre nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav aria-label="Ruta de navegación">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Catálogo</a></li>
+                <li aria-current="page">Confirmación de compra</li>
+            </ol>
+        </nav>
+
+        <section aria-label="Mensaje de confirmación">
+            <h2>¡Gracias por tu compra!</h2>
+            <p>Tu compra fue realizada correctamente. Te enviamos un correo electrónico con los detalles del pedido.</p>
+        </section>
+
+        <section aria-label="Resumen del pedido">
+            <h2>Resumen del pedido</h2>
+
+            <section aria-label="Producto comprado">
+                <h3>Producto</h3>
+                <table aria-label="Producto de la compra">
+                    <caption>Detalle del producto adquirido</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="producto.html">Pava eléctrica ATMA PED 2511 IAP</a></th>
+                            <td>$120.000</td>
+                            <td>1</td>
+                            <td>$120.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section aria-label="Total de la compra">
+                <h3>Total</h3>
+                <p><strong>Total del pedido:</strong> $120.000</p>
+            </section>
+        </section>
+
+        <section aria-label="Opciones de la confirmación">
+            <h3>Opciones</h3>
+            <p><a href="index.html">&larr; Volver al inicio</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Electrohogar. Todos los derechos reservados.</p>
+        <nav aria-label="Redes sociales">
+            <ul>
+                <li><a href="https://instagram.com/electrohogar" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+                <li><a href="https://x.com/electrohogar" rel="noopener noreferrer" target="_blank">X (Twitter)</a></li>
+                <li><a href="https://youtube.com/electrohogar" rel="noopener noreferrer" target="_blank">YouTube</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
