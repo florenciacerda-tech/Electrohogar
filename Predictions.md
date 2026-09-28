@@ -12,3 +12,9 @@
 7. Voy a crear una página de registro para Electrogar, donde los usuarios puedan crear una cuenta ingresando sus datos personales.
 
 8. Voy a crear una página de inicio de sesión para Electrogar, donde los usuarios puedan ingresar con su correo electrónico y contraseña.
+
+ 9. Voy a comenzar a agregar estilos CSS al proyecto Electrogar utilizando un archivo externo llamado style.css.
+La idea es comenzar a maquetar el header, el nav, el catálogo y el footer del index.html.
+Quiero utilizar un diseño simple, moderno y minimalista, con variantes de azul y gris, y que sea responsive para adaptarse a celulares, tablets y computadoras.
+Voy a utilizar reglas CSS sencillas para poder comprender y mantener los estilos del proyecto.
+
